@@ -1,0 +1,7 @@
+target/
+.vscode/
+config.properties
+
+# OS/editor noise
+Thumbs.db
+*.log
