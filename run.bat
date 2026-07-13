@@ -29,7 +29,7 @@ for /r "%SRC_DIR%" %%f in (*.java) do (
     echo %%~ff >> "%SRC_FILE%"
 )
 
-javac --release 17 -encoding UTF-8 -cp "%CP%" -d "%OUT_DIR%" @"%SRC_FILE%"
+javac --release 21 -encoding UTF-8 -cp "%CP%" -d "%OUT_DIR%" @"%SRC_FILE%"
 if errorlevel 1 (
     echo Compilation failed.
     pause
